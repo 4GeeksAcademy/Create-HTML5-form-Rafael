@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+  crossorigin="anonymous"
+/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+</head>
+<body>
+
+    <form class="border">
+        <div class="row">
+                            <!-- HEADING -->
+                <div class="form-header p-3 border"
+                style="background-color: var(--bs-secondary-bg); color: black;">
+                    <h3 class="ps-3">Payment form example</h3>
+                </div>
+                                    <!-- ROWS -->
+
+                <div class="row pt-3 pb-3 ps-5 pf-5">
+                    <div class="card col-9 justify-content-center text-danger" style="background-color: var(--bs-danger-bg-subtle);">
+                        <p>Some texts are missing</p>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-5">
+                        <label for="validationCustom01" class="form-label">Card #</label>
+                        <input type="text" class="form-control" id="validationCustom01" value="XXXX-XXXX-XXXX" required>
+                    <div class="valid-feedback">
+                    Looks good!
+                    </div>
+                </div>
+                <div class="col-3">
+                    <label for="validationCustom02" class="form-label">CVC #</label>
+                        <input type="text" class="form-control" id="validationCustom02" value="0000" required>
+                    <div class="valid-feedback">
+                    Looks good!
+                    </div>
+                </div>
+                <div class="col-4">
+                    <label for="validationCustomUsername" class="form-label">Amount</label>
+                    <div class="input-group has-validation">
+                    <span class="input-group-text" id="inputGroupPrepend">$</span>
+                    <input type="text" class="form-control" id="validationCustomUsername" value="Amount" aria-describedby="inputGroupPrepend" required>
+                    <div class="invalid-feedback">
+                        Please enter amount.
+                    </div>
+                    </div>
+                </div>
+                <!-- ----------------- -->
+                <div class="col-6">
+                    <label for="validationCustom02" class="form-label">First Name</label>
+                        <input type="text" class="form-control" id="validationCustom02" value="" required>
+                    <div class="valid-feedback">
+                    Looks good!
+                    </div>
+                </div>
+                <div class="col-6">
+                    <label for="validationCustom02" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" id="validationCustom02" value="" required>
+                    <div class="valid-feedback">
+                    Looks good!
+                    </div>
+                </div>
+                <!-- ----------------- -->
+                <div class="col-6">
+                    <label for="validationCustom02" class="form-label">City</label>
+                        <input type="text" class="form-control" id="validationCustom02" value="" required>
+                    <div class="valid-feedback">
+                    Looks good!
+                    </div>
+                </div>
+                <div class="col-3">
+                    <label for="validationCustom04" class="form-label">State</label>
+                    <select class="form-select" id="validationCustom04" required>
+                    <option selected disabled value="">Pick a state</option>
+                    <option>...</option>
+                    </select>
+                    <div class="invalid-feedback">
+                    Please select a valid state.
+                    </div>
+                </div>
+                <div class="col-3">
+                    <label for="validationCustom02" class="form-label">Postal Code</label>
+                        <input type="text" class="form-control" id="validationCustom02" value="" required>
+                    <div class="valid-feedback">
+                    Looks good!
+                    </div>
+                </div>
+         </div>           
+                             <!-- FIRST ROW FINISH -->
+                              <!-- BOTTOM ROWS -->
+        <div class="row">
+            <div class="col-6 py-5">
+                <p>We accept:</p>
+                <div class="d-flex border text-bg-secondary">
+                    <div class="form-check me-3">
+                        <input class="form-check-input" type="radio" name="flexRadio" id="radio1" checked>
+                        <label class="form-check-label" for="radio1">
+                        <i class="bi bi-credit-card"></i>
+                        </label>
+                    </div>
+                    <div class="form-check me-3">
+                        <input class="form-check-input" type="radio" name="flexRadio" id="radio2">
+                        <label class="form-check-label" for="radio2">
+                        <i class="bi bi-credit-card"></i>
+                        </label>
+                    </div>
+                    <div class="form-check me-3">
+                        <input class="form-check-input" type="radio" name="flexRadio" id="radio3">
+                        <label class="form-check-label" for="radio3">
+                        <i class="bi bi-credit-card"></i>
+                        </label>
+                    </div>
+                    <div class="form-check me-3">
+                        <input class="form-check-input" type="radio" name="flexRadio" id="radio3">
+                        <label class="form-check-label" for="radio3">
+                        <i class="bi bi-credit-card"></i>
+                        </label>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="form-floating col-6 py-5">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                <label for="floatingTextarea2">Message</label>
+            </div>
+
+            
+        </div>
+        <div class="form-header p-3 border d-flex justify-content-end"
+                style="background-color: var(--bs-secondary-bg); color: black;">
+                <button type="button" class="btn btn-secondary">Cancel</button>
+                <button type="button" class="btn btn-primary ms-2">Send</button>
+         </div>
+
+
+
+    </form>
+    
+
+    <script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-WpOohqC+LU1hY+UYGZ1JjOBZRI3JJGMQt7aXxAoIgMUVcCVP0xAKbq4a4CE7JyS+"
+  crossorigin="anonymous"
+></script>
+</body>
+</html>
