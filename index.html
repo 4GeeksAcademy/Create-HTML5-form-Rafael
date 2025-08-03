@@ -11,19 +11,20 @@
   crossorigin="anonymous"
 />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
 
 </head>
 <body>
     <!-- <div class="card"> -->
-        <form class="border">
-            <div class="row">
-                                <!-- HEADING -->
-                    <div class="border"
-                    style="background-color: var(--bs-secondary-bg); color: black;">
-                        <h3 class="ps-3 pt-3 pb-3">Payment form example</h3>
-                    </div>
+        <div class="container mt-4">
+            <div class="card">
+                                    <!-- HEADING -->
+                <div class="card-header">
+                    <h5 class="ps-3 pt-3 pb-3">Payment form example</h5>
+                </div>
                                         <!-- ROWS -->
 
+                <div class="card-body">
                     <div class="alert alert-danger" role="alert">
                     Some fields are missing
                     </div>
@@ -31,122 +32,121 @@
                         <div class="col-5">
                             <label for="validationCustom01" class="form-label">Card #</label>
                             <input type="text" class="form-control" id="validationCustom01" placeholder="XXXX-XXXX-XXXX" required>
-                        <div class="valid-feedback">
-                        Looks good!
+                            <div class="valid-feedback">
+                            Looks good!
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-3">
-                        <label for="validationCustom02" class="form-label">CVC #</label>
-                            <input type="text" class="form-control" id="validationCustom02" placeholder="000" required>
-                        <div class="valid-feedback">
-                        Looks good!
+                        <div class="col-3">
+                            <label for="validationCustom02" class="form-label">CVC #</label>
+                                <input type="text" class="form-control" id="validationCustom02" placeholder="000" required>
+                            <div class="valid-feedback">
+                            Looks good!
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-4">
-                        <label for="validationCustomUsername" class="form-label">Amount</label>
-                        <div class="input-group has-validation">
-                        <span class="input-group-text" id="inputGroupPrepend1">$</span>
-                        <input type="text" class="form-control" id="validationCustomUsername2" placeholder="Amount" aria-describedby="inputGroupPrepend" required>
-                        <div class="invalid-feedback">
-                            Please enter amount.
+                        <div class="col-4">
+                            <label for="validationCustomUsername" class="form-label">Amount</label>
+                            <div class="input-group has-validation">
+                                <span class="input-group-text" id="inputGroupPrepend1">$</span>
+                                <input type="text" class="form-control" id="validationCustomUsername2" placeholder="Amount" aria-describedby="inputGroupPrepend" required>
+                                <div class="invalid-feedback">
+                                    Please enter amount.
+                                </div>
+                            </div>
                         </div>
-                        </div>
-                    </div>
-                    <!-- ----------------- -->
-                    <div class="col-6">
-                        <label for="validationCustom02" class="form-label">First Name</label>
+                        <!-- ----------------- -->
+                        <div class="col-6">
+                            <label for="validationCustom02" class="form-label">First Name</label>
                             <input type="text" class="form-control" id="validationCustom04" value="" required>
-                        <div class="valid-feedback">
-                        Looks good!
+                            <div class="valid-feedback">
+                            Looks good!
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-6">
-                        <label for="validationCustom02" class="form-label">Last Name</label>
+                        <div class="col-6">
+                            <label for="validationCustom02" class="form-label">Last Name</label>
                             <input type="text" class="form-control" id="validationCustom05" value="" required>
-                        <div class="valid-feedback">
-                        Looks good!
+                            <div class="valid-feedback">
+                            Looks good!
+                            </div>
                         </div>
-                    </div>
-                    <!-- ----------------- -->
-                    <div class="col-6">
-                        <label for="validationCustom02" class="form-label">City</label>
+                        <!-- ----------------- -->
+                        <div class="col-6">
+                            <label for="validationCustom02" class="form-label">City</label>
                             <input type="text" class="form-control" id="validationCustom06" value="" required>
-                        <div class="valid-feedback">
-                        Looks good!
+                            <div class="valid-feedback">
+                            Looks good!
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-3">
-                        <label for="validationCustom04" class="form-label">State</label>
-                        <select class="form-select" id="validationCustom07" required>
-                        <option selected disabled value="">Pick a state</option>
-                            <option selected>Pick a state</option>
-                            <option value="1">FL</option>
-                            <option value="2">NY</option>
-                            <option value="3">OK</option>
-                        </select>
-                        <div class="invalid-feedback">
-                        Please select a valid state.
+                        <div class="col-3">
+                            <label for="validationCustom04" class="form-label">State</label>
+                            <select class="form-select" id="validationCustom07" required>
+                                <option selected disabled value="">Pick a state</option>
+                                <option selected>Pick a state</option>
+                                <option value="1">FL</option>
+                                <option value="2">NY</option>
+                                <option value="3">OK</option>
+                            </select>
+                            <div class="invalid-feedback">
+                            Please select a valid state.
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-3">
-                        <label for="validationCustom02" class="form-label">Postal Code</label>
+                        <div class="col-3">
+                            <label for="validationCustom02" class="form-label">Postal Code</label>
                             <input type="text" class="form-control" id="validationCustom08" value="" required>
-                        <div class="valid-feedback">
-                        Looks good!
+                            <div class="valid-feedback">
+                            Looks good!
+                            </div>
                         </div>
                     </div>
-            </div>           
-                                <!-- FIRST ROW FINISH -->
-                                <!-- BOTTOM ROWS -->
-            <div class="row">
-                <div class="col-6 py-5">
-                    <p>We accept:</p>
-                    <div class="d-flex border text-bg-secondary">
-                        <div class="form-check me-3">
-                            <input class="form-check-input" type="radio" name="flexRadio" id="radio1" checked>
-                            <label class="form-check-label" for="radio1">
-                            <i class="bi bi-credit-card"></i>
-                            </label>
+                                    <!-- FIRST ROW FINISH -->
+                                    <!-- BOTTOM ROWS -->
+                    <div class="row">
+                        <div class="col-3 py-3">
+                            <label class="form-label">We accept:</label>
+                            <div class="rounded bg-secondary-subtle p-1">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="flexRadio" id="radio1" checked>
+                                    <label class="form-check-label" for="radio1">
+                                        <i class="fa-brands fa-cc-mastercard"></i>
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="flexRadio" id="radio2">
+                                    <label class="form-check-label" for="radio2">
+                                        <i class="fa-brands fa-cc-visa"></i>
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="flexRadio" id="radio3">
+                                    <label class="form-check-label" for="radio3">
+                                        <i class="fa-brands fa-cc-discover"></i>
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="flexRadio" id="radio4">
+                                    <label class="form-check-label" for="radio3">
+                                        <i class="fab fa-cc-amex"></i>
+                                    </label>
+                                </div>
+                            </div>
                         </div>
-                        <div class="form-check me-3">
-                            <input class="form-check-input" type="radio" name="flexRadio" id="radio2">
-                            <label class="form-check-label" for="radio2">
-                            <i class="bi bi-credit-card"></i>
-                            </label>
+                        <div class="col-3">
                         </div>
-                        <div class="form-check me-3">
-                            <input class="form-check-input" type="radio" name="flexRadio" id="radio3">
-                            <label class="form-check-label" for="radio3">
-                            <i class="bi bi-credit-card"></i>
-                            </label>
-                        </div>
-                        <div class="form-check me-3">
-                            <input class="form-check-input" type="radio" name="flexRadio" id="radio4">
-                            <label class="form-check-label" for="radio3">
-                            <i class="bi bi-credit-card"></i>
-                            </label>
+                        <div class="form-floating col-6 py-5">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea5" style="height: 100px"></textarea>
+                            <label for="floatingTextarea2">Message</label>
+                            <sub class="text-secondary">Add any notes here</sub>
                         </div>
                     </div>
 
+                    <!-- ---------------- FOOTER ----------- -->
+                    
                 </div>
-
-                <div class="form-floating col-6 py-5">
-                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea5" style="height: 100px"></textarea>
-                    <label for="floatingTextarea2">Message</label>
-                    <sub class="text-secondary">Add any notes here</sub>
-                </div>
-
-                
-            </div>
-            <div class="form-header p-3 border d-flex justify-content-end"
-                    style="background-color: var(--bs-secondary-bg); color: black;">
+                <div class="card-footer text-end">
                     <button type="button" class="btn btn-secondary">Cancel</button>
                     <button type="button" class="btn btn-primary ms-2">Send</button>
+                </div>
             </div>
-
-
-
-        </form>
+        </div>
     
     <!-- </div> -->
     <script
@@ -156,3 +156,5 @@
 ></script>
 </body>
 </html>
+
+
